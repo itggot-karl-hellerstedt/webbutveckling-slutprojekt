@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    height: 150vh;
+    font-family: Gamma Orionis;
+}
+
+.wrapper{
+    height: 100%;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 100px 75px 250px 2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "list list"
+    "main main"
+    "content content"
+    "disclaimer disclaimer";
+}
+
+header{
+    grid-area: header;
+    background-color: blue;
+}
+
+.TTT{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.undertext{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.list{
+    grid-area: list;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+.listan{
+    width: 140px;
+    height: 400px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    left: 117.5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 1fr 1fr 1fr;
+    font-size: 25px;
+    grid-template-areas:
+    "oh"
+    "bh"
+    "dh"
+    "rh"
+    "gh"
+    "fh";
+}
+
+.listan ul{
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.listan p{
+    color: white;
+    width: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+    margin-bottom: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listan i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.listan ul:nth-child(1){
+    grid-area: bh;
+}
+
+.listan ul:nth-child(2){
+    grid-area: dh;
+}
+
+.listan ul:nth-child(3){
+    grid-area: rh;
+}
+
+.listan ul:nth-child(4){
+    grid-area: gh;
+}
+
+.listan ul:nth-child(5){
+    grid-area: fh;
+}
+/* .list2{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline;
+}
+.pep{
+    width: 40px;
+    margin: 0;
+    margin-right: 0;
+    font-size: 30px;
+    color: white;
+}
+
+.list2 i{
+    font-size: 40px;
+    margin-left: 15px;
+    color: white;
+}
+
+.list2 i:hover{
+    color: grey;
+}
+
+.list2:hover{
+    border: grey solid 1px;
+} */
+
+main{
+    grid-area: main;
+    background-color: green;
+}
+
+.content{
+    grid-area: content;
+    background-color: yellow;
+}
+
+.disclaimer{
+    grid-area: disclaimer;
+    background-color: khaki;
+}
+
+/*--------FONTS-------- */
+@font-face {
+    font-family: Gamma Orionis;
+    src: url(../fonts/Gamma\ Orionis.otf);
+}
