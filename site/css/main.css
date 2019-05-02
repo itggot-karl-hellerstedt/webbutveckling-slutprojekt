@@ -60,19 +60,6 @@ header{
     font-size: 25px;
 }
 
-.listan_when_short{
-    width: 140px;
-    height: 40px;
-    background-color: black;
-    z-index: 1;
-    position: absolute;
-    left: 117.5px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: grey solid 2px;
-    font-size: 25px;
-}
-
 .dororo{
     height: 180px;
     display: grid;
@@ -130,6 +117,35 @@ header{
 .listan i{
     font-size: 30px;
     margin-left: 10px;
+}
+
+.listan_aftercringe{
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    left: 117.5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: grey solid 2px;
+    font-size: 25px;
+}
+
+.listan_aftercringe p{
+    color: white;
+    width: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+    margin-bottom: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listan_aftercringe i:hover{
+    cursor: pointer;
 }
 
 .listan ul:nth-child(1){
