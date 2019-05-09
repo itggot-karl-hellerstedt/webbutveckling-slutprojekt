@@ -1,6 +1,8 @@
+/*---------------------- GGG ----------------------*/
+
 body{
     margin: 0;
-    height: 150vh;
+    height: 250vh;
     font-family: Gamma Orionis;
 }
 
@@ -56,7 +58,7 @@ header{
     margin-top: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: grey solid 2px;
+    border: whitesmoke solid 1px;
     font-size: 25px;
 }
 
@@ -72,10 +74,15 @@ header{
     "gh"
     "fh";
     overflow: scroll;
-    border-top: grey solid 1px;
+    overflow-x: hidden;
+    border-top: whitesmoke solid 1px;
 }
 
 .enddd{
+    display: none;
+}
+
+.endd{
     display: none;
 }
 
@@ -128,7 +135,7 @@ header{
     left: 117.5px;
     margin-top: 20px;
     border-radius: 10px;
-    border: grey solid 2px;
+    border: whitesmoke solid 1px;
     font-size: 25px;
 }
 
@@ -144,7 +151,12 @@ header{
     align-items: center;
 }
 
-.listan_aftercringe i:hover{
+.listan_aftercringe i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.cursor:hover{
     cursor: pointer;
 }
 
@@ -167,38 +179,6 @@ header{
 .listan ul:nth-child(5){
     grid-area: fh;
 }
-/* .list2{
-    width: 150px;
-    height: 40px;
-    background-color: black;
-    display: flex;
-    position: relative;
-    align-items: center;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline;
-}
-.pep{
-    width: 40px;
-    margin: 0;
-    margin-right: 0;
-    font-size: 30px;
-    color: white;
-}
-
-.list2 i{
-    font-size: 40px;
-    margin-left: 15px;
-    color: white;
-}
-
-.list2 i:hover{
-    color: grey;
-}
-
-.list2:hover{
-    border: grey solid 1px;
-} */
 
 main{
     grid-area: main;
@@ -215,8 +195,54 @@ main{
     background-color: khaki;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_text{
+    height: 30%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.gaben_gone_gack_akronym{
+    color: white;
+    font-size: 70px;
+}
+
+.gaben_gone_gack_normie{
+    color: white;
+    font-size: 20px;
+}
+
+
 /*--------FONTS-------- */
 @font-face {
     font-family: Gamma Orionis;
     src: url(../fonts/Gamma\ Orionis.otf);
+}
+
+
+/*----------- DESKTOP -----------*/
+@media only screen and (min-width: 900px){
+    .listan{
+        left: 690px;
+    }
+
+    .listan_aftercringe{
+        left: 690px;
+    }
+
+    .gaben_gone_gack_akronym{
+        color: white;
+        font-size: 80px;
+    }
+    
 }
