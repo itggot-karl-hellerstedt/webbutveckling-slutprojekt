@@ -2,7 +2,7 @@
 
 body{
     margin: 0;
-    height: 250vh;
+    height: 200vh;
     font-family: Gamma Orionis;
 }
 
@@ -11,7 +11,7 @@ body{
     background-color: aquamarine;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 100px 75px 250px 2fr 1fr;
+    grid-template-rows: 100px 75px 250px 2000px 600px;
     grid-template-areas: 
     "header header"
     "list list"
@@ -21,8 +21,13 @@ body{
 }
 
 header{
+    height: 101px;
+    width: 375px;
     grid-area: header;
-    background-color: blue;
+    background-color: black;
+    position: fixed;
+    z-index: 5;
+    border-bottom: 1px solid white;
 }
 
 .TTT{
@@ -43,7 +48,7 @@ header{
 
 .list{
     grid-area: list;
-    background-color: red;
+    background-color: gainsboro;
     justify-content: center;
     align-items: center;
 }
@@ -52,7 +57,7 @@ header{
     width: 140px;
     height: 210px;
     background-color: black;
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     left: 117.5px;
     margin-top: 20px;
@@ -126,11 +131,16 @@ header{
     margin-left: 10px;
 }
 
+a{
+    color: white;
+    text-decoration-line: none;
+}
+
 .listan_aftercringe{
     width: 140px;
     height: 40px;
     background-color: black;
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     left: 117.5px;
     margin-top: 20px;
@@ -182,23 +192,57 @@ header{
 
 main{
     grid-area: main;
-    background-color: green;
+    background-color: black;
+    z-index: 2;
+}
+
+.understandtext{
+    height: 100px;
+    width: 300px;
+    margin-top: 35px;
+    color: white;
+    display: flex;
 }
 
 .content{
     grid-area: content;
-    background-color: yellow;
+    background-color: darkgrey;
 }
 
 .disclaimer{
     grid-area: disclaimer;
-    background-color: khaki;
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: 400px auto;
+    grid-template-areas:
+    "distext"
+    "rights";
+}
+
+.distext{
+    grid-area: distext;
+    display: flex;
+    align-items: space-between;
+}
+
+.big_distext{
+    color: white;
+}
+
+.little_distext{
+    color: white;
+}
+
+.rights{
+    grid-area: rights;
 }
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 25px 1px black, 0 0 25px black, 0 0 5px black;
 }
 
 .main_text{
@@ -209,7 +253,7 @@ main{
     align-items: center;
     flex-direction: column;
     margin-bottom: 100px;
-    text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
 }
 
 .gaben_gone_gack_akronym{
@@ -221,6 +265,129 @@ main{
     color: white;
     font-size: 20px;
 }
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content2{
+    height: 15%;
+    width: 75%;
+    display: grid;
+    grid-template-rows: 70% auto;
+    grid-template-areas:
+    "pic"
+    "txt";
+    margin: 40px;
+    box-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkred;
+}
+
+.content2_pic{
+    grid-area: pic;
+    background-color: red;
+}
+
+.content2_text{
+    border-top: black solid 4px;
+    grid-area: txt;
+    background-color: white;
+}
+
+.content3{
+    height: 15%;
+    width: 75%;
+    display: grid;
+    grid-template-rows: 70% auto;
+    grid-template-areas:
+    "pic"
+    "txt";
+    margin: 40px;
+    box-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkred;
+}
+
+.content3_pic{
+    grid-area: pic;
+    background-color: white;
+}
+
+.content3_text{
+    border-top: black solid 4px;
+    grid-area: txt;
+    background-color: white;
+}
+
+.content4{
+    height: 15%;
+    width: 75%;
+    display: grid;
+    grid-template-rows: 70% auto;
+    grid-template-areas:
+    "pic"
+    "txt";
+    margin: 40px;
+    box-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkred;
+}
+
+.content4_pic{
+    grid-area: pic;
+    background-color: white;
+}
+
+.content4_text{
+    border-top: black solid 4px;
+    grid-area: txt;
+    background-color: white;
+}
+
+.content5{
+    height: 15%;
+    width: 75%;
+    display: grid;
+    grid-template-rows: 70% auto;
+    grid-template-areas:
+    "pic"
+    "txt";
+    margin: 40px;
+    box-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkred;
+}
+
+.content5_pic{
+    grid-area: pic;
+    background-color: white;
+}
+
+.content5_text{
+    border-top: black solid 4px;
+    grid-area: txt;
+    background-color: white;
+}
+
+.content6{
+    height: 15%;
+    width: 75%;
+    display: grid;
+    grid-template-rows: 70% auto;
+    grid-template-areas:
+    "pic"
+    "txt";
+    margin: 40px;
+    box-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkred;
+}
+
+.content6_pic{
+    grid-area: pic;
+    background-color: white;
+}
+
+.content6_text{
+    border-top: black solid 4px;
+    grid-area: txt;
+    background-color: white;
+}
+
 
 
 /*--------FONTS-------- */
