@@ -26,7 +26,7 @@ header{
     font-size: 40px;
     display: flex;
     justify-content: center;
-    /* margin-top: 10px; */
+    padding-top: 10px;
 }
 
 .undertext{
@@ -59,6 +59,10 @@ main{
 
 i{
     margin-top: 2px;
+}
+
+i:hover{
+    cursor: pointer;
 }
 
 a{

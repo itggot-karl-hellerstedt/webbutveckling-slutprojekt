@@ -1,4 +1,4 @@
-/*---------------------- TTT ----------------------*/
+/*---------------------- TTT (GGG)----------------------*/
 
 body{
     margin: 0;
@@ -219,6 +219,8 @@ main{
     "big"
     "little"
     "rights";
+    box-shadow: 0px 0px 25px black, 25px 25px 25px black, 0px 0px 5px black;
+    z-index: 10;
 }
 
 .big_distext{
@@ -290,6 +292,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 .content2{
@@ -306,13 +309,16 @@ main{
 
 .content2_pic{
     grid-area: pic;
-    background-color: red;
+    background-image: url(../img/god_gaben\ @282x210.jpg)
 }
 
 .content2_text{
-    border-top: black solid 4px;
+    border-top: white solid 4px;
     grid-area: txt;
-    background-color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .content3{
@@ -329,13 +335,16 @@ main{
 
 .content3_pic{
     grid-area: pic;
-    background-color: white;
+    background-image: url(../img/tank_gaben\ @282x210.jpg)
 }
 
 .content3_text{
-    border-top: black solid 4px;
+    border-top: white solid 4px;
     grid-area: txt;
-    background-color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center; 
 }
 
 .content4{
@@ -352,13 +361,16 @@ main{
 
 .content4_pic{
     grid-area: pic;
-    background-color: white;
+    background-image: url(../img/heavenly_gaben\ @282x210.jpg)
 }
 
 .content4_text{
-    border-top: black solid 4px;
+    border-top: white solid 4px;
     grid-area: txt;
-    background-color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .content5{
@@ -375,13 +387,16 @@ main{
 
 .content5_pic{
     grid-area: pic;
-    background-color: white;
+    background-image: url(../img/geo_gaben\ @282x210.png)
 }
 
 .content5_text{
-    border-top: black solid 4px;
+    border-top: white solid 4px;
     grid-area: txt;
-    background-color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .content6{
@@ -398,13 +413,94 @@ main{
 
 .content6_pic{
     grid-area: pic;
-    background-color: white;
+    background-image: url(../img/gaben_ladies-man\ @282x210.jpg)
 }
 
 .content6_text{
-    border-top: black solid 4px;
+    border-top: white solid 4px;
     grid-area: txt;
-    background-color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+/*---------- TTT (NNN) ----------*/
+.content2_pic_NNN{
+    grid-area: pic;
+    background-image: url(../img/nyx1\ @282x210.jpg)
+}
+
+.content3_pic_NNN{
+    grid-area: pic;
+    background-image: url(../img/nyx2\ @282x210.png)
+}
+
+.content4_pic_NNN{
+    grid-area: pic;
+    background-image: url(../img/nyx3\ @282x210.jpg)
+}
+
+.content5_pic_NNN{
+    grid-area: pic;
+    background-image: url(../img/nyx4\ @282x210.png)
+}
+
+.content6_pic_NNN{
+    grid-area: pic;
+    background-image: url(../img/nyx5\ @282x210.jpg)
+}
+
+/*---------- TTT (MMM) ----------*/
+.content2_pic_MMM{
+    grid-area: pic;
+    background-image: url(../img/madmudman1\ @282x210.jpg)
+}
+
+.content3_pic_MMM{
+    grid-area: pic;
+    background-image: url(../img/madmudfamily\ @282x210.jpg)
+}
+
+.content4_pic_MMM{
+    grid-area: pic;
+    background-image: url(../img/mudmonster\ @282x210.jpg)
+}
+
+.content5_pic_MMM{
+    grid-area: pic;
+    background-image: url(../img/insanemudman\ @282x210.jpg)
+}
+
+.content6_pic_MMM{
+    grid-area: pic;
+    background-image: url(../img/madmudmen\ @282x210.jpg)
+}
+
+/*---------- TTT (MMM) ----------*/
+.content2_pic_EEE{
+    grid-area: pic;
+    background-image: url(../img/whiteegg\ @282x210.jpg)
+}
+
+.content3_pic_EEE{
+    grid-area: pic;
+    background-image: url(../img/eyeegg\ @282x210.jpg)
+}
+
+.content4_pic_EEE{
+    grid-area: pic;
+    background-image: url(../img/knotegg\ @282x210.jpg)
+}
+
+.content5_pic_EEE{
+    grid-area: pic;
+    background-image: url(../img/viralegg\ @282x210.jpg)
+}
+
+.content6_pic_EEE{
+    grid-area: pic;
+    background-image: url(../img/eggsareweird\ @282x210.jpg)
 }
 
 /* --------FONTS-------- */
