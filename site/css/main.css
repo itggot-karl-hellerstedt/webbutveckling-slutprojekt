@@ -524,5 +524,61 @@ main{
         color: white;
         font-size: 80px;
     }
+
+    .content{
+        flex-direction: row;
+        overflow-x: scroll;
+        /* width: 600px;
+        margin-left: 50%; */
+    }
     
+    .content2{
+        width: 282px;
+        height: 300px;
+        margin: 20px;
+        margin-left: 100px;
+        min-width: 282px;
+        min-height: 300px;
+    }
+
+    .content3{
+        width: 282px;
+        height: 300px;
+        margin: 20px;
+        min-width: 282px;
+        min-height: 300px;
+    }
+
+    .content4{
+        width: 282px;
+        height: 300px;
+        margin: 20px;
+        min-width: 282px;
+        min-height: 300px;
+    }
+
+    .content5{
+        width: 282px;
+        height: 300px;
+        margin: 20px;
+        min-width: 282px;
+        min-height: 300px;
+    }
+
+    .content6{
+        width: 282px;
+        height: 300px;
+        margin: 20px;
+        min-width: 282px;
+        min-height: 300px;
+        /* margin-right: 100px; */
+    }
+
+    .wrapper{
+        grid-template-rows: 100px 75px 250px 400px 400px;
+    }
+
+    body{
+        height: 1225px;
+    }
 }
